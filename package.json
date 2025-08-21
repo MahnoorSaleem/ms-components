@@ -1,21 +1,20 @@
 {
-  "name": "@qg/ui",
+  "name": "@ms/ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "main": "components/ui/index.ts",
   "types": "components/ui/index.ts",
-  "files": [
-    "components/ui"
-  ],
+  "files": ["components/ui"],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build",
+    "changeset": "changeset"
   },
   "dependencies": {
-    "@changesets/cli": "^2.29.6",
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/vite": "^4.1.12",
     "class-variance-authority": "^0.7.1",
