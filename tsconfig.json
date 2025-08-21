@@ -1,0 +1,30 @@
+{
+  "target": "ES6",
+  "module": "ESNext",
+  "declaration": true,
+  "outDir": "dist",
+  "rootDir": "components/ui",
+  "jsx": "react",
+  "strict": true,
+  "esModuleInterop": true,
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "components/ui"
+  ]
+}
